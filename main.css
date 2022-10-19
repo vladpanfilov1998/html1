@@ -13,9 +13,12 @@
 /** Block's parameters **/
 
 .container {
-    width: 600px;
+    width: 1200px;
     margin: 20px auto;
     border: 10px solid white;
+    display: flex;
+    flex-direction: row;
+    background: darkcyan;
 }
 
 .container2 {
@@ -23,16 +26,13 @@
     margin: 20px auto;
 }
 
-.header {
-    height: 300px;
-    box-sizing: border-box;
-    margin: 15px;
-}
-
-.footer {
+.right, .left {
+    width: 50%;
     height: 600px;
     box-sizing: border-box;
-    margin: 0 15px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main {
@@ -42,16 +42,17 @@
 }
 
 .figure {
-    height: 250px;
-    width: 200px;
-    margin: 15px;
+    height: 150px;
+    width: 450px;
+    margin: 25px;
+    border-radius: 6px;
 }
 
 .figure1 {
     display: flex;
     flex-direction: column;
-    height: 400px;
-    width: 2000px;
+    height: 500px;
+    width: 300px;
     margin: 15px;
     border: 1px solid #5b5757;
 }
@@ -62,31 +63,45 @@
 }
 
 .block2 {
-    margin: 80px 80px 50px 80px;
+    margin: 20px;
     text-align: center;
 }
 
 .block3 {
     padding: 5px 60px 5px 60px;
     border: 1px solid #5b5757;
+    background: darkcyan;
 }
 
+.block4 {
+    width: 300px;
+    padding: 20px;
+}
+
+.third {
+    margin-top: 5px;
+}
+
+.fourth {
+    margin-top: 5px;
+}
 
 /** Text style **/
 
 .text1 {
-    font-size: 40px;
-    color: white;
+    font-size: 25px;
+    color: #b74444;
+    padding-bottom: 15px;
 }
 
 .text2 {
-    font-size: 20px;
-    color: white;
+    font-size: 12px;
+    color: #180909;
 }
 
 .text3 {
-    font-size: 20px;
-    color: #2a2525;
+    font-size: 30px;
+    color: #590808;
 }
 
 .text4 {
@@ -96,18 +111,22 @@
 
 .text5 {
     font-size: 20px;
-    color: #2a2525;
+    color: #eee6ee
+}
+
+.name {
+    font-size: 30px;
+    color: black;
+    text-align: center;
 }
 
 
 /** Block's colors **/
 
-.box1, .box5 {
-    background-color: #1111c9;
-}
-
 .box2, .box3, .box4 {
-    background-color: #050536;
+    background-color: snow;
+    display: flex;
+    flex-direction: row;
 }
 
 
